@@ -183,7 +183,8 @@ const Register = () => {
                                 <div className="space-y-2">
                                     <label className="block text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1">Phone Number</label>
                                     <input
-                                        type="text"
+                                        type="number"
+                                        max={10}
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handleChange}

@@ -95,7 +95,7 @@ const Login = () => {
             <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-100 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2"></div>
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full blur-3xl opacity-50 translate-y-1/2 -translate-x-1/2"></div>
 
-            <div className="w-full max-w-[440px] relative z-10 transition-all duration-500 animate-float">
+            <div className="w-full max-w-[440px] relative z-10 transition-all duration-500">
                 <div className="glass-card rounded-[48px] overflow-hidden shadow-2xl backdrop-blur-2xl">
                     <div className="p-10 sm:p-14">
                         <div className="text-center mb-12">

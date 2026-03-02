@@ -20,6 +20,10 @@ const userSchema = mongoose.Schema({
         enum: ['admin', 'worker', 'citizen'],
         default: 'citizen'
     },
+    isAdmin: {
+        type: Boolean,
+        default: false
+    },
     assignedArea: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Area',

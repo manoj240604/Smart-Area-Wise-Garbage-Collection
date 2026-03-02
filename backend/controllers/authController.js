@@ -11,9 +11,9 @@ const generateToken = (id) => {
 const authUser = async (req, res) => {
     const { email, password } = req.body;
 
-    // 1. HARDCODED ADMIN CHECK
-    if (email === 'adminmv@gmail.com' && password === 'admin@2026') {
-        const adminUser = await User.findOne({ role: 'admin' });
+    // 1. ADMIN CHECK (using environment variables)
+    if (email === process.env.ADMIN_EMAIL && password === process.env.ADMIN_PASSWORD) {
+        const adminUser = await User.findOne({ email });
         if (adminUser) {
             return res.json({
                 _id: adminUser._id,
